@@ -1,0 +1,2 @@
+# a module is a file containing code written by somebody else(usually) which can be imported and used in our program. There are module like django, flask, pyjokes
+# pip is the package manager for python, you can use pip to install a module on your system
