@@ -1,0 +1,5 @@
+___1___
+string is a sequence of characters enclosed in quotes
+a = 'Taha' single quoted string
+b = "Taha" double quoted string
+c = '''Taha''' triple quoted string
