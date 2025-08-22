@@ -1,0 +1,128 @@
+___1___ 
+we can print multi line string all together like this 
+
+print("""Twinkle, twinkle, little star, how I wonder what you are. Up above the world so high,
+like a diamond in the sky. Twinkle, twinkle, little star, how I wonder what you are.
+When the blazing sun is set, and the grass with dew is wet. Then you show your little
+light, twinkle, twinkle all the night. Twinkle, twinkle little star, how I wonder what you are
+Then the traveler in the dark thanks you for your tiny spark. How could he see where to
+go if you did not twinkle so? Twinkle, twinkle little star, how I wonder what you are.
+As your bright and tiny spark lights the traveler in the dark, though I know not what you
+are, twinkle, twinkle, little star. Twinkle, twinkle, little star, how I wonder what you are""")
+
+___2___ 
+A variable is the name given to a memory location in a program, for example 
+a = 1, b =, "Taha", c = 55.65, here a b c is the variable
+
+___3___ 
+Data Types in Python Integers, floating point numbers, strings, boolean, None
+
+___4___
+----------------------Arithmetic operator:  +, -, *, /
+a = 7
+b= 4
+c = (a+b)
+print(a+b) in the terminal we should see 11
+
+----------------------Augmented assingment operator: =, +=, -=, *=, /=
+a = 7
+b = 3
+b += 2, increment the value of 3 by 2 then assign it to b
+print (b) in the terminal we will see  5
+
+a = 7
+b = 3
+b -= 2 decrease the value of 3 by 2 then assign it to b
+print (b) in the terminal we will see  8
+
+---------------------comparison operators: ==, >, <=, >=, <, !=, their return values are always boolean
+d = 5 < 4
+print(d) returns false
+a = 5 >= 6 
+print(a) returns False
+b = 5 <= 6 
+print(b) returns True
+c = 5 != 6
+print(c) != means not equal to which is a true statement 
+e = 5==5
+print(e) returns true
+
+---------------------Logical operators: and, or, not
+has_high_income = True
+has_good_habit = True
+
+eligibility = "eligible for loan"
+
+if has_high_income and has_good_habit:
+    print(eligibility)
+else:
+    print("not eligible")
+
+has_criminal_record = True
+has_murder_record = False
+
+eligibility = "eligible for citizenship"
+
+if has_high_income or has_good_habit:
+    print(eligibility)
+else:
+    print("not eligible")
+# since both true, also because of and operator it will return eligible 
+# if one of the statement is false, also has and operator it will return false not eligible
+# if one of the statement is false, also has or operator it will return True because in that case only one of the condition needs to be true eligible
+# and not operator makes true statement false, and false statement true
+
+___5___ 
+type() function is used to find the data type of a given varibale in Python
+a  = 56
+t = type(a)
+print(t) < class 'int" >
+
+b = 67.5
+t = type(b)
+print(t) < class 'float' >
+
+b = "Taha"
+t = type(b)
+print(t) < class 'str' >
+
+b = "3.5"
+t = type(b)
+print(t) < class 'str' > still string because it's inside of the double quote
+
+b = True
+t = type(b)
+print(t) < class 'bool' >
+
+
+we can also change the type, for example, 
+a = "3.5" 
+b = float("3.5")
+t = type(b)
+print(t) prints out, < class 'float' >, even though "3.5" was a string but by doing float("3.5"). we converted string into a float
+
+___6___
+input function: This function allows the user to take input from the keyboard as a string. It is important to note that the output of input is always a string(even is a number is entered)
+num  = input("pick a number: ") lets say we pick 4
+result = int(num) ** 2, it will square 4 right here like 4^2, ** is sqaure. But here num is a string, in order to multiply, convert it into integer because we can't multiply int with a string
+
+print(result)
+
+different example: 
+question_1 = (input("Enter a number: ")) lets say we pick 4
+question_2 = (input("Enter a number: ")) lets say we pick 6
+result =  question_1 + question_2
+print(result) in the terminal we will see 46 because it returns a string... for example "Taha"+"Coder" TahaCoder. same concept
+In order to add it 
+question_1 = int(input("Enter a number: ")) lets say we pick 4
+question_2 = int(input("Enter a number: ")) lets say we pick 6
+result =  question_1 + question_2
+print(result) in the terminal we will see 10, because now we made both of them int
+
+we could also write it like this 
+a = int(input("enter number 1: "))
+b = int(input("enter number 2: "))
+
+print("number a is: ", a)
+print("number b is: ", b)
+print("Sum is ", a+b)   we can write the print statement like this 
