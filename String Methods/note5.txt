@@ -1,0 +1,86 @@
+___1___
+The most important method is len, len helps to find the numbers of character in a string
+name = "Taha"
+print (len(name)) #This len operator helps to determine the number of character, this case it's 4
+
+number = [1,2,3] # or we can do (1, 2, 3) same ouput like 3
+print (len(number)) #also for numbers 
+
+___2___
+startswith method
+name = "Taha"
+print(name.startswith("Ta")) # in the terminal we will see true, However it is case sensitive so if we do ta, it will be false
+
+___3___
+endswith method 
+name ="Taha"
+print(name.endswith(ha)) # in the terminal we will see true.
+
+___4___
+find method, check for the index
+name = "Invader"
+print(name.find("d")) #this find operator helps to determine the index, which is 4
+
+___5___
+in operator works like a boolean expression
+name = "Taha"
+print('Taha' in name) #in operator works like a boolean expression and in the terminal we will see true
+print('taha' in name) #here we will see false in the terminal since I put lowercase t
+
+___6___
+replace method helps to replace old with new characers or alphabets 
+
+statement = "Nothing is better than nothing"
+print (statement.replace('Nothing' , 'Something')) # in the terminal we will see something is better than nothing
+                         #old         #new
+print (statement.replace('Not' , 'Somet')) #we can also replace alphabets
+a = "Taha"
+b = a[0]
+print(a)
+print(a.replace("T" , "P")) # in the terminal we will see Paha
+
+___7___
+capitalize method only capitalize the first alphabet of the string
+name_2 = "nishat"
+print(name_2.capitalize()) # in the terminal we should see nishat
+
+___8___
+upper method convert the whole string into upper case, same with lower method
+name = "Taha"
+print(name.upper())
+name_2 = "NISHAT"
+print(name_2.lower())
+___9___
+logical operator
+Logical operators: and, or, not
+has_high_income = True
+has_good_habit = True
+
+eligibility = "eligible for loan"
+
+if has_high_income and has_good_habit:
+    print(eligibility)
+else:
+    print("not eligible")
+
+has_criminal_record = True
+has_murder_record = False
+
+eligibility = "eligible for citizenship"
+
+if has_high_income or has_good_habit:
+    print(eligibility)
+else:
+    print("not eligible")
+# since both true, also because of and operator it will return eligible 
+# if one of the statement is false, also has and operator it will return false not eligible
+# if one of the statement is false, also has or operator it will return True because in that case only one of the condition needs to be true eligible
+# and not operator makes true statement false, and false statement true
+
+___10___
+Escape sequence character, one of the most important is \n, which helps to create line 2, and we can add it multiple times, and actually there's more of them
+statement = "Taha is a motherfucker\nbut helpful sometimes"
+print(statement) 
+In the terminal we will see 
+Taha is a motherfucker 
+but helpful sometimes
