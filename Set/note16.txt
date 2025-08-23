@@ -1,0 +1,56 @@
+___1___
+
+sets are unordered, unindexed, there is no way to change items in sets, sets can not contain duplicate values
+# the first rule of set is, NO REPETITION ALLOWED and needs to be written in curly braces whic is slightly different than dictionary
+# in order to make set, write this, s = set(), Don't use s = {} as it will create an empty dictionary
+
+we can also add string into it like 
+value = { 1, 22, 22, 5, 6, "Taha", 9}
+# sets methods
+value.add(68)
+print(value)
+
+___2___
+clear methods
+value = { 1, 22, 22, 5, 6, 8, 8, 9}
+value.clear()
+print(value) # in the terminal we will see set()
+
+___3___
+intersection method
+value = {1, 22, 22, 5, 6, "Taha", 9, 2}
+value2 = {2, 3, "Nishat", 22}
+print(value.intersection(value2)) # intersection will only print common items in both set in this case it's {2, 22}
+
+___4___
+len methods
+value = { 1, 22, 22, 5, 6, 8, 8, 9}
+print(len(value)) # in the terminal we will see 6 because it cleared the repitition
+Another example : 
+value = { 1, 22, 22, 5, 6, "Taha", 9}
+print(len(value)) #in the terminal we will see 6 because it cleared the repitition
+___5___
+pop method
+value = { 1, 22, 22, 5, 6, 8, 8, 9}
+value.pop() # it just remove a random number from the set
+print(value)
+
+___6___
+remove method
+value = { 1, 22, 22, 5, 6, 8, 8, 9}
+value.remove(9)
+print(value) # in th eterminal we will see {1, 5, 6, 22, 8} because it removed 9 and duplicate values
+___7___
+union method
+
+value = {1, 22, 22, 5, 6, "Taha", 9}
+value2 = {2, 3, "Nishat"}
+print(value.union(value2)) # in the terminal we will see {1, 2, 3, 5, 'Taha', 6, 9, 'Nishat', 22} since it's a set
+
+"""
+value = (1, 22, 22, 5, 6, "Taha", 9)
+value2 = (2, 3, "Nishat")
+result = value + value2
+print(result) #in the terminal we will see (1, 22, 22, 5, 6, 'Taha', 9, 2, 3, 'Nishat') since it's a tuples
+
+"""

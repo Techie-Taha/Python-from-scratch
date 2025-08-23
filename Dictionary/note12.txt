@@ -1,0 +1,56 @@
+___1___
+#data = {}, this is an empty dictionary, but in the curly braces we can define multiple unique key values following by a comma
+data = {
+    "name": "Taha Ahmed",
+    "age": 21,
+    "is_verified": True  # we are allowed to add strings, integers, boolean like everything but has to be unique.
+}
+data["birth date"] = "July 10th, 2004" # can add more info outside of the curly braces like this 
+print(data["name"])
+print(data["age"])
+print(f'Birth date: {data["birth date"]}')
+
+___2___
+Dictionary methods
+.items methods
+
+print(data.items()) # in th eterminal we will see dict_items([('name', 'Taha Ahmed'), ('age', 21), ('is_verified', True), ('birth date', 'July 10th, 2004')]), as a tuples
+
+___3___
+.keys methods
+if we do print(data.keys()), it will print out the keys like name, age, birth date, is is_verified
+
+___4___
+.values methods
+it will print out the values like Taha Ahmed, 21, True, July 10th 2004
+
+___5___
+update methods needs to be done in curly braces
+info = { 
+    "name": "Taha"
+}
+info.update({"name": "Max"}) # we can update the dictionary like this 
+print(info["name"])
+
+Another example:
+info = {
+    "name": "Taha",
+    "age": 21
+}
+info.update({"age": 22})
+info.update({"name": "Max"})
+print(info["name"], info["age"])
+
+___6___
+get method
+info = {
+    "name": "Taha",
+    "age": 21
+}
+print(info.get("name")) # This will return Taha in the terminal
+
+info = {
+    "name": "Taha",
+    "age": 21
+}
+print(info.get("Name")) # This will return None in the terminal
