@@ -1,0 +1,42 @@
+___1___
+pop method
+num = ["Taha", 65, "Apple", 76.5, "Nishat", False] # it will delete the last item from the list
+num.pop()
+print(num)
+
+# However 
+lists = [2, 2, 4, 6, 3, 4, 6, 1]
+print(lists.pop(7)) #  #If we try to print it like this, it will return the value which belongs to the index in the parenthesis, this case it's 1
+___2___
+insert method
+
+num = ["Taha", 65, "Apple", 76.5, "Nishat", False]
+num.insert(1, 0) # here 1 is the index, and we are telling python to add 0 before index 1
+print(num) # in the terminal we will see ['Taha', 0, 65, 'Apple', 76.5, 'Nishat', False]
+
+___3___
+append method
+num = ["Taha", 65, "Apple", 76.5, "Nishat", False]
+num.append(10) # it will always add 10 at the end of the list
+print(num)
+___4___
+clear method
+num = ["Taha", 65, "Apple", 76.5, "Nishat", False]
+num.clear() # in the terminal we will see []
+print(num)
+___5___
+remove method
+num = ["Taha", 65, "Apple", 76.5, "Nishat", False]
+num.remove("Taha") 
+num.remove(65)
+print(num) # in the terminal we will see ['Apple', 76.5, 'Nishat', False] it removed Taha and 65
+___6___
+sort method
+num = [5, 1, 2, 4, 5, 9]
+num.sort() # it will sort the list like [1, 2, 4, 5, 5, 9]
+print(num)
+
+___7___NOT ALLOWED IS 
+lists = [2, 4, 3, 6, 1]
+
+print(lists.reverse()) # it will return NONE

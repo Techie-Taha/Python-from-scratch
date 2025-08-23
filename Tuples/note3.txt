@@ -1,0 +1,22 @@
+___1___
+
+numbers = (1, 2, 3) #we use [] to define list and () to define tuples
+
+___3___
+In tuples we can only count and find the index
+numbers = (1, 2, 3)
+print(numbers.count(1)) #in the terminal we should see 1
+#in tuples we can't change the item or insert new item
+print(numbers[0]) #in the terminal we should see 1
+
+___2___
+
+number = (1, 6, 6, 6, 6666, 78)
+print(number.count(6)) # in the terminal we will see 3
+
+___3___
+# we can also concatenate tuples
+tuples1 =(1, 2, 3)
+tuples2 = (4, 5, 6)
+add = tuples1 + tuples2
+print(add)

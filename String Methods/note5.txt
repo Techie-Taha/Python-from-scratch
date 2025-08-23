@@ -22,10 +22,18 @@ name = "Invader"
 print(name.find("d")) #this find operator helps to determine the index, which is 4
 
 ___5___
-in operator works like a boolean expression
+in operator works like a boolean expression, true or false
 name = "Taha"
 print('Taha' in name) #in operator works like a boolean expression and in the terminal we will see true
 print('taha' in name) #here we will see false in the terminal since I put lowercase t
+
+Another example: 
+num = ["Taha", 65, "Apple", 76.5, "Nishat", False]
+if "taha" in num:
+    print("True")
+else:
+    print("false") # in the terminal we will false because I put a lower case taha, if I would have write Taha, it will return true
+
 
 ___6___
 replace method helps to replace old with new characers or alphabets 

@@ -1,0 +1,18 @@
+___1___
+Python lists are containers to store a set of values of any data type
+
+num = ["Taha", 65, "Apple", 76.5, "Nishat", False]
+print(num) # in the terminal we will see ["Taha", 65, "Apple", 76.5, "Nishat", False]
+
+Lists are immutable like we cab change or replace the item in a list
+
+num = ["Taha", 65, "Apple", 76.5, "Nishat", False]
+num[3] = "Sahat"
+print(num) # in the terminal we will see ['Taha', 65, 'Apple', 'Sahat', 'Nishat', False], since we updated index 3 with Sahat
+
+___2___ 
+index slicing
+we can slice list index in a same way we did it with string.
+
+num = ["Taha", 65, "Apple", 76.5, "Nishat", False]
+print(num[1:4]) # in the terminal we will see [65, 'Apple', 76.5]
