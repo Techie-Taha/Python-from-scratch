@@ -1,19 +1,8 @@
-___1___
-if (condition): # if condition is True
-    print("yes")
-
-elif(condition2): # if condition is True
-    print("No")
-else: # other wise
-    print("Idk")
-
-___2___
-speacial type
 num = int(input("Enter a number: "))
 
 # if statement 1, this one will run independently
 if num%4 == 0:
-    print('succes') # if doesn't need elif or else, it can run by itself
+    print('succes')
 
 
 # if statement 2, this one will run independently
